@@ -37,26 +37,26 @@ export default function ProductSlug() {
       <div className="mx-2 md:mx-16 xl:mx-32 my-8">
         <div
           className="md:w-[600px] lg:w-[800px] xl:w-[1000px] mx-16 lg:mx-48 bg-gray-50 rounded-lg shadow-lg shadow-gray-400"
-          key={product.slug}
+          key={product?.slug}
         >
-          <h3 className="text-center pt-4 text-xl font-bold">{product.name}</h3>
+          <h3 className="text-center pt-4 text-xl font-bold">{product?.name}</h3>
           <div className="flex flex-col lg:flex-row justify-center p-8">
             <Image
               className="rounded-lg"
-              src={product.img}
+              src={product?.img}
               alt="product image"
               width={400}
               height={400}
             />
             <div className="flex flex-col gap-6 md:w-96 mt-6">
               <span className="md:mx-6 text-sm text-red-400">
-                {product.category}
+                {product?.category}
               </span>
               <p className="text-sm md:text-xl font-semibold tracking-tight text-gray-900 md:mx-6">
-                {product.description}
+                {product?.description}
               </p>
               <span className="md:text-3xl font-bold text-gray-900 md:mx-6">
-                ${product.price}
+                ${product?.price}
               </span>
               <div className="flex gap-2">
                 <button
